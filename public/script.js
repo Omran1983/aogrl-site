@@ -1,31 +1,6 @@
-async function data(){ return fetch("/data/site.json").then(r=>r.json()); }
-function toast(msg){ let t=document.createElement("div"); t.className="toast"; t.textContent=msg;
-  document.body.appendChild(t); setTimeout(()=>t.remove(),1800); }
-function fillContacts(d){
-  const y=document.getElementById("y"); if(y) y.textContent=(new Date).getFullYear();
-  const em=document.getElementById("emailLink"); if(em){ em.href="mailto:"+d.owner.email; em.textContent=d.owner.email; }
-  const wa=document.getElementById("waLink"); if(wa){ wa.href=d.owner.whatsapp; }
-  const waCTA=document.getElementById("waCTA"); if(waCTA){ waCTA.href=d.owner.whatsapp; }
-  const ph=document.getElementById("phones"); if(ph){ ph.textContent=d.owner.phones.join(" · "); }
-}
-async function init(){
-  const d=await data(); fillContacts(d);
-  const svc=document.getElementById("svcGrid");
-  if(svc){ svc.innerHTML=d.services.map(s=>`<div class="card"><span class="kicker">${s.slug}</span>
-    <h3>${s.name}</h3><div class="price">From ${s.price}</div>
-    <ul class="list">${s.points.map(p=>`<li>${p}</li>`).join("")}</ul>
-    <div style="margin-top:10px"><a class="btn" href="/solutions/${s.slug}.html">See details</a></div></div>`).join(""); }
-  const aff=document.getElementById("affGrid");
-  if(aff){ aff.innerHTML=d.affiliates.map(a=>`<div class="card">
-      <div class="flex center" style="gap:10px"><img src="${a.logo||""}" alt="${a.name} logo" style="height:28px;aspect-ratio:3/1;object-fit:contain"><h3>${a.name}</h3>
-      ${a.code ? `<p>Use code: <strong>${a.code}</strong> <button class="btn small ghost" onclick="navigator.clipboard.writeText('${a.code}').then(()=>toast('Code copied: ${a.code}'))">Copy</button></p>` : ""}
-      <p style="color:#059669">${a.perk||""}</p>
-      <div class="flex" style="gap:10px;flex-wrap:wrap;margin-top:8px">
-        <a class="btn" href="${a.url}" target="_blank" rel="nofollow sponsored noopener">${a.cta || "Open link"}</a>
-        ${a.learn ? `<a class="btn ghost" href="${a.learn}">Why this link</a>` : ""}
-      </div>
-      <p class="kicker" style="margin-top:8px">Official domain only. AOGRL may earn a commission at no extra cost.</p>
-    </div>`).join(""); }
-}
-init();
-
+function toast(msg){let t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),1600)}
+(function(){const y=document.getElementById("y"); if(y) y.textContent=(new Date).getFullYear();})();
+(function(){const rot=document.getElementById("rot"); if(!rot) return; const w=["WhatsApp Systems","Automation","AI Agents","E-commerce"]; let i=0; setInterval(()=>{rot.textContent=w[i%w.length];i++},1400);})();
+(function(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){let el=e.target,end=+el.dataset.count||0,cur=0,step=Math.ceil(end/40);let h=setInterval(()=>{cur+=step;if(cur>=end){cur=end;clearInterval(h)}el.textContent=cur.toLocaleString()},30);io.unobserve(el)}}),{threshold:.3});document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));})();
+(function(){const tabs=document.querySelectorAll(".tab"); if(!tabs.length) return; tabs.forEach(t=>t.addEventListener("click",()=>{tabs.forEach(b=>b.classList.remove("active"));t.classList.add("active");document.querySelectorAll(".pane").forEach(p=>p.style.display="none");const tgt=document.getElementById(t.dataset.show); if(tgt) tgt.style.display="grid"}));})();
+(function(){document.querySelectorAll(".faq .q").forEach(q=>q.onclick=()=>{const a=q.nextElementSibling; a.style.display=a.style.display==="block"?"none":"block";});})();

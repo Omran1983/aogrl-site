@@ -1,16 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JARVIS Ops — AOGRL</title><meta name="description" content="Automation that watches your stack and sends actionable digests.">
-<link rel="canonical" href="https://aogrl.com/solutions/jarvis-ops.html"><link rel="stylesheet" href="/styles.css"></head><body>
-<header class="site-header"><div class="container flex between center"><a href="/" class="brand"><div class="logo">AOGRL</div><div class="tag">Operator • Builder</div></a>
-<nav class="nav"><a href="/">Home</a><a href="/#services" class="active">Services</a></nav></div></header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JARVIS Ops Automation — AOGRL</title><meta name="description" content="Intel/Monitor digests, health checks, self-heal, and clean ops.">
+<link rel="stylesheet" href="/styles.css"></head><body>
+<header class="header"><div class="container flex between center"><a href="/" class="brand"><div class="logo">AOGRL</div><div class="tag">Operator • Builder • Systems</div></a>
+<nav class="nav"><a href="/">Home</a><a class="active" href="/solutions/jarvis-ops.html">JARVIS Ops</a></nav></div></header>
+<section class="hero"><div class="img" style="background-image:url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  <div class="container inner"><h1>JARVIS Ops Automation</h1><p class="lead">Intel + Monitor bots, guardrails, and simple docs so ops stay healthy.</p></div></section>
 <section class="section"><div class="container grid-2">
-<div><h1>JARVIS Ops</h1><p class="lead">Intel + Monitor bots that surface what matters and self-heal common issues.</p>
-<ul class="list bullets"><li>Hourly/weekly digests to WhatsApp/Email.</li><li>Health checks with restart hooks.</li><li>Supabase + Vercel first-class.</li></ul>
-<a class="btn" href="https://wa.me/23057887132" target="_blank">Start a 12-hour plan</a></div>
-<div class="card"><div class="kicker">Snippet — n8n node</div>
-<pre class="code">
-Cron -> HTTP Request (GET https://status.supabase.com/api/v2/summary.json)
-     -> Filter(warnings) -> Format Digest -> WhatsApp Send
-</pre></div></div></section>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"JARVIS Ops Automation","provider":{"@type":"Organization","name":"AOGRL"},"offers":{"@type":"Offer","priceCurrency":"USD","price":"1250"}}</script>
-</body></html>
+  <div><h2>Scope</h2><ul class="list bullets"><li>Intel + Monitor digests</li><li>Health checks + self-heal</li><li>Supabase/Vercel wiring</li><li>Docs + rollback</li></ul></div>
+  <div class="card"><div class="kicker">Bots (sample)</div><pre class="code">Atlas (fetch) · Courier (send) · Scout (queue)
+Medic (heal) · Sentinel (watch) · Scribe (logs)</pre></div>
+</div></section>
+<footer class="footer"><div class="container between center"><div>© <span id="y"></span> AOGRL.</div></div></footer>
+<script src="/script.js"></script></body></html>
