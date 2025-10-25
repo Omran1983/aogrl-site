@@ -36,3 +36,5 @@ width:28px;height:28px;border-radius:8px;display:inline-flex;align-items:center;
 .site-footer{padding:20px 0;border-top:1px solid var(--line);color:var(--muted)}
 .site-footer .links a{margin-left:12px}
 .code{background:#0b1220;color:#e2e8f0;border-radius:12px;padding:12px;overflow:auto;border:1px solid #0f172a}
+.toast{position:fixed;right:16px;bottom:16px;background:#0ea5e9;color:#fff;padding:10px 14px;border-radius:12px;opacity:.95}
+
