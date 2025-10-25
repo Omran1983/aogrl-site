@@ -77,22 +77,41 @@
       "name": "KuCoin",
       "cta": "Trade on KuCoin",
       "url": "https://www.kucoin.com/r/af/r82Y3XZ",
-      "perk": "Code: r82Y3XZ — fee perks",
-      "logo": "/assets/brands/kucoin.svg"
+      "perk": "Fee perks via code r82Y3XZ",
+      "logo": "/assets/brands/kucoin.svg",
+      "category": "Exchange",
+      "features": [
+        "Wide markets",
+        "Trading bots",
+        "PoR snapshots"
+      ]
     },
     {
       "name": "Binance",
       "cta": "Join via Binance CPA",
       "url": "https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP",
-      "perk": "Code: CPA_00G3ONT9KP",
-      "logo": "/assets/brands/binance.svg"
+      "perk": "CPA referral (region varies)",
+      "logo": "/assets/brands/binance.svg",
+      "category": "Exchange",
+      "features": [
+        "High liquidity",
+        "P2P & Earn",
+        "SAFU fund"
+      ]
     },
     {
       "name": "Goli Nutrition",
       "cta": "Shop Goli (Use Code)",
       "url": "https://go.goli.com/affili8583",
-      "perk": "Use code: affili8583",
-      "logo": "/assets/brands/goli.svg"
+      "perk": "Official partner discount",
+      "logo": "/assets/brands/goli.svg",
+      "category": "Wellness",
+      "features": [
+        "Official store",
+        "Fast checkout",
+        "Promo code"
+      ],
+      "code": "affili8583"
     }
   ]
 }

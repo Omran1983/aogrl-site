@@ -1,24 +1,86 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tools & Affiliates — AOGRL</title><meta name="description" content="Tools I trust. Some links include perks and may support AOGRL.">
+<title>Tools & Affiliates — AOGRL</title>
+<meta name="description" content="Tools I trust. Fast to start. Easy to operate. Official domains only; perks disclosed.">
 <link rel="stylesheet" href="/styles.css"></head><body>
 <header class="header"><div class="container flex between center">
   <a href="/" class="brand"><div class="logo">AOGRL</div><div class="tag">Operator • Builder • Systems</div></a>
-  <nav class="nav"><a href="/">Home</a><a class="active" href="/tools.html">Tools</a></nav>
+  <nav class="nav"><a href="/">Home</a><a class="active" href="/tools.html">Tools</a><a href="/#services">Services</a></nav>
 </div></header>
+
 <section class="hero"><div class="img" style="background-image:url('https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
-  <div class="container inner"><h1>Tools I trust</h1><p class="lead">Fast to start. Easy to operate. Official domains only; perks disclosed.</p></div>
+  <div class="container inner"><h1>Tools I trust</h1><p class="lead">Vetted picks I use in builds. Some links include perks and may support AOGRL — at no extra cost.</p></div>
 </section>
-<section class="marquee"><div class="container">
-  <div class="row"><img src="/assets/brands/binance.svg" alt="Binance"><img src="/assets/brands/kucoin.svg" alt="KuCoin"><img src="/assets/brands/goli.svg" alt="Goli"><img src="/assets/brands/binance.svg" alt=""></div>
-  <div class="row" aria-hidden="true"><img src="/assets/brands/kucoin.svg" alt=""><img src="/assets/brands/goli.svg" alt=""><img src="/assets/brands/binance.svg" alt=""><img src="/assets/brands/kucoin.svg" alt=""></div>
+
+<section class="section"><div class="container">
+  <div class="filters">
+    <button class="chip active" data-cat="All">All</button>
+    <button class="chip" data-cat="Exchange">Exchanges</button>
+    <button class="chip" data-cat="Wellness">Wellness</button>
+    <div class="search"><input id="affSearch" placeholder="Search tools (e.g., liquidity, code, PoR)"></div>
+  </div>
+
+  <div id="affGrid" class="grid-3"></div>
+
+  <div class="compare">
+    <h2>Compare Exchanges (quick view)</h2>
+    <div class="card">
+      <div class="kicker">KuCoin vs Binance — highlights</div>
+      <table id="cmpTable"><thead><tr><th>Attribute</th><th>KuCoin</th><th>Binance</th></tr></thead>
+        <tbody>
+          <tr><td>Perk / Ref</td><td>Code r82Y3XZ</td><td>CPA_00G3ONT9KP</td></tr>
+          <tr><td>Highlights</td><td>Wide markets · Bots · PoR</td><td>High liquidity · P2P · SAFU</td></tr>
+          <tr><td>Official link</td><td><a href="https://www.kucoin.com/r/af/r82Y3XZ" target="_blank" rel="nofollow sponsored noopener">kucoin.com</a></td>
+              <td><a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP" target="_blank" rel="nofollow sponsored noopener">binance.com</a></td></tr>
+        </tbody>
+      </table>
+      <p class="kicker" style="margin-top:8px">Always verify domain, enable app-based 2FA, and consider self-custody for long holds.</p>
+    </div>
+  </div>
 </div></section>
-<section class="section"><div class="container grid-3">
-  <div class="card"><div class="kicker">Exchange</div><h3>KuCoin</h3><p>Fee perks via referral code <strong>r82Y3XZ</strong>.</p>
-    <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://www.kucoin.com/r/af/r82Y3XZ" target="_blank" rel="nofollow sponsored noopener">Open KuCoin</a><a class="btn ghost" href="/affiliates/kucoin.html">Why this link</a></div></div>
-  <div class="card"><div class="kicker">Exchange</div><h3>Binance</h3><p>CPA referral: <strong>CPA_00G3ONT9KP</strong> (region varies).</p>
-    <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP" target="_blank" rel="nofollow sponsored noopener">Open Binance</a><a class="btn ghost" href="/affiliates/binance.html">Why this link</a></div></div>
-  <div class="card"><div class="kicker">Wellness</div><h3>Goli</h3><p>Use code <strong>affili8583</strong> at checkout.</p>
-    <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://go.goli.com/affili8583" target="_blank" rel="nofollow sponsored noopener">Shop Goli</a><button class="btn ghost" onclick="navigator.clipboard.writeText('affili8583');toast('Code copied')">Copy code</button><a class="btn ghost" href="/affiliates/goli.html">Why this link</a></div></div>
-</div></section>
+
 <footer class="footer"><div class="container between center"><div>© <span id="y"></span> AOGRL.</div><div class="links"><a href="/">Home</a></div></div></footer>
-<script src="/script.js"></script></body></html>
+
+<script src="/script.js"></script>
+<script>
+// Tools v9 logic (page-local)
+async function loadData(){ return fetch("/data/site.json").then(r=>r.json()); }
+function card(a){
+  const feats = (a.features||[]).map(f=>`<span class="badge">${f}</span>`).join("");
+  const code  = a.code ? `<p>Code: <strong>${a.code}</strong> <button class="btn small ghost" onclick="navigator.clipboard.writeText('${a.code}').then(()=>toast('Code copied'))">Copy</button></p>` : "";
+  const learn = a.learn ? `<a class="btn ghost" href="${a.learn}">Why this link</a>` : "";
+  const logo  = a.logo ? `<img src="${a.logo}" alt="${a.name} logo" style="height:28px;aspect-ratio:3/1;object-fit:contain">`:"";
+  return `<div class="card">
+    <div class="flex center" style="gap:10px;margin-bottom:8px">${logo}<h3>${a.name}</h3></div>
+    <p style="color:#93f5ff">${a.perk||""}</p>
+    ${code}
+    <div class="badge-list">${feats}</div>
+    <div class="flex" style="gap:10px;flex-wrap:wrap;margin-top:10px">
+      <a class="btn" href="${a.url}" target="_blank" rel="nofollow sponsored noopener">${a.cta||'Open link'}</a>
+      ${learn}
+    </div>
+    <details style="margin-top:10px"><summary class="kicker">Safety & tips</summary>
+      <ul class="list"><li>Check official domain before login/checkout</li><li>Use app-based 2FA + anti-phishing code</li><li>Start small; verify perks apply in your region</li></ul>
+    </details>
+  </div>`;
+}
+(function(){
+  const chips=[...document.querySelectorAll(".chip")];
+  const search=document.getElementById("affSearch");
+  const grid=document.getElementById("affGrid");
+  let raw=[], cat="All", q="";
+  chips.forEach(c=>c.onclick=()=>{ chips.forEach(x=>x.classList.remove("active")); c.classList.add("active"); cat=c.dataset.cat; render();});
+  search.oninput=(e)=>{ q=(e.target.value||"").toLowerCase(); render(); };
+
+  loadData().then(d=>{ raw=d.affiliates||[]; render(); });
+  function render(){
+    const list = raw.filter(a=>{
+      const catOk = (cat==="All") || ((a.category||"").toLowerCase()===cat.toLowerCase());
+      const hay = [a.name,a.perk,(a.features||[]).join(" "),a.code].join(" ").toLowerCase();
+      const qOk = !q || hay.includes(q);
+      return catOk && qOk;
+    });
+    grid.innerHTML = list.map(card).join("") || "<p>No results.</p>";
+  }
+})();
+</script>
+</body></html>
