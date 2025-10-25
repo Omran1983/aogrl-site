@@ -1,97 +1,184 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AOGRL — Omran Ahmad | Consulting, Automation & WhatsApp Systems</title>
-<meta name="description" content="Omran Ahmad (AOGRL): fit-to-purpose consulting for WhatsApp commerce, K-12 ops (EduConnect), automation (JARVIS), and light e-commerce.">
-<link rel="canonical" href="https://aogrl.com/"><meta name="theme-color" content="#10b981">
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AOGRL — Consulting, WhatsApp Systems & Automation</title>
+<meta name="description" content="Omran Ahmad (AOGRL): vibrant, fast consulting for WhatsApp commerce, K-12 ops (EduConnect), automations (JARVIS) and e-commerce.">
+<link rel="canonical" href="https://aogrl.com/">
 <meta property="og:type" content="website"><meta property="og:title" content="AOGRL — Consulting & Automation">
-<meta property="og:description" content="Build fast. Operate simply. WhatsApp systems, school ops, automations, AI agents.">
+<meta property="og:description" content="Build fast. Operate simply. Vibrant systems people love to use.">
 <meta property="og:image" content="https://aogrl.com/assets/og-image.png"><meta property="og:url" content="https://aogrl.com/">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AOGRL — Omran Ahmad">
-<meta name="twitter:description" content="Operator • Builder • Systems"><meta name="twitter:image" content="https://aogrl.com/assets/og-image.png">
-<link rel="stylesheet" href="/styles.css?v=20251025144552"></head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060a1a;--ink:#eaf2ff;--muted:#a9b8d3;--line:#1a2746;--card:#0b1229;--brand:#7c3aed;--accent:#06b6d4;--ok:#10b981;--hot:#f97316}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,Segoe UI,Roboto,Arial,sans-serif}
+a{color:#7dd3fc;text-decoration:none}a:hover{opacity:.9}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.flex{display:flex}.between{justify-content:space-between}.center{align-items:center}
+.grid-2{display:grid;gap:28px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{display:grid;gap:24px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1000px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:12px 18px;border-radius:14px;border:1px solid transparent;background:linear-gradient(135deg,#22d3ee,#7c3aed);color:#061323;font-weight:800}
+.btn.ghost{background:transparent;border-color:#33466e;color:#cfe2ff}.btn.small{padding:8px 12px;border-radius:10px}
+
+.header{position:sticky;top:0;z-index:50;background:rgba(6,10,26,.55);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font-weight:900;letter-spacing:.02em}.tag{font-size:12px;color:var(--muted)}
+.nav a{margin:0 10px;color:#b9c7e2}.nav a.active,.nav a:hover{color:#fff}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20%;background:
+ radial-gradient(60vw 30vw at 10% 10%, rgba(124,58,237,.45), transparent),
+ radial-gradient(50vw 30vw at 90% 0%, rgba(6,182,212,.35), transparent),
+ radial-gradient(70vw 35vw at 50% 110%, rgba(16,185,129,.30), transparent);filter:blur(10px);animation:glow 14s linear infinite alternate}
+@keyframes glow{to{transform:translateY(-12px)}}
+.hero-img{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;opacity:.28;mix-blend:screen}
+.hero-inner{position:relative;z-index:2;padding:100px 0}
+.hero h1{font-size:48px;margin:0 0 8px}.lead{max-width:900px;color:#d9e7ff;font-size:18px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.badge{background:rgba(255,255,255,.08);border:1px solid #34496f;color:#e3edff;padding:6px 10px;border-radius:999px;font-size:12px}
+
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.03);padding:16px 0}
+.marquee{display:flex;gap:40px;overflow:hidden}
+.marquee .row{display:flex;gap:40px;animation:mar 28s linear infinite}
+@keyframes mar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee img{height:32px;filter:drop-shadow(0 1px 0 #0007);opacity:.9}
+
+.section{padding:72px 0}.kicker{font-size:12px;color:#9fb2d9;text-transform:uppercase;letter-spacing:.14em}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.00));border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.card:hover{transform:translateY(-4px);transition:.2s;box-shadow:0 16px 34px rgba(0,0,0,.35)}
+.price{font-weight:900;color:#86f7ff}.list{list-style:none;margin:0;padding:0}.list li{margin:8px 0;color:#bfd0ee}
+.tabs{display:flex;gap:10px;margin:10px 0 22px}.tab{padding:8px 12px;border-radius:999px;border:1px solid #33466e;color:#bfe0ff;cursor:pointer}.tab.active{background:#7c3aed;color:#060a1a;border-color:#7c3aed}
+.counter{font-size:36px;font-weight:900;color:#7dd3fc}
+.faq .q{cursor:pointer;padding:12px 14px;border:1px solid var(--line);border-radius:14px;margin:8px 0;background:rgba(255,255,255,.03)}.faq .a{display:none;padding:10px 14px;color:#d6e6ff}
+.toast{position:fixed;right:16px;bottom:16px;background:#0ea5e9;color:#061321;padding:10px 14px;border-radius:12px;font-weight:800;opacity:.95}
+.footer{padding:22px 0;border-top:1px solid var(--line);color:#9eb6db}
+</style>
+</head>
 <body>
-<header class="site-header"><div class="container flex between center">
+<header class="header"><div class="container flex between center">
   <a href="/" class="brand"><div class="logo">AOGRL</div><div class="tag">Operator • Builder • Systems</div></a>
   <nav class="nav">
-    <a href="/#services" class="active">Services</a>
-    <a href="/industries/index.html">Industries</a>
-    <a href="/case-studies/index.html">Case Studies</a>
-    <a href="/insights/index.html">Insights</a>
+    <a href="#services" class="active">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#insights">Insights</a>
     <a href="/tools.html">Tools</a>
-    <a href="/#contact" class="btn small ghost">Work with me</a>
+    <a href="#contact" class="btn small">Work with me</a>
   </nav>
 </div></header>
 
-<section class="hero" style="background:#0ea5e9 url(/assets/photos/hero.jpg?v=20251025144552) center/cover no-repeat;"><div class="container">
-  <h1>Fit-to-purpose consulting. Fast.</h1>
-  <p class="lead">I build and run practical systems for schools and brands: WhatsApp-native flows, clean automations, and lightweight AI agents. Less software, more outcomes.</p>
-  <div class="badges"><div class="badge">WhatsApp Business</div><div class="badge">n8n / ActivePieces</div><div class="badge">Supabase</div><div class="badge">Vercel</div><div class="badge">Ollama</div></div>
-  <div style="margin-top:14px"><a href="#services" class="btn">See services</a> <a href="/case-studies/index.html" class="btn ghost">See results</a></div>
-</div></section>
+<section class="hero">
+  <div class="hero-img"></div>
+  <div class="container hero-inner">
+    <h1>Vibrant systems for <span id="rot">WhatsApp</span></h1>
+    <p class="lead">I help schools and brands run smoother with bold flows, clean automations, and lightweight AI agents. Less software, more outcomes.</p>
+    <div class="badges"><div class="badge">WhatsApp Business</div><div class="badge">n8n / ActivePieces</div><div class="badge">Supabase</div><div class="badge">Vercel</div><div class="badge">Ollama</div></div>
+    <div style="margin-top:16px"><a href="#services" class="btn">See services</a> <a href="#case-studies" class="btn ghost">See results</a></div>
+  </div>
+</section>
 
-<section class="trust"><div class="container">
-  <div class="kicker">Trusted by</div>
-  <div class="logos">
-    <div></div><div></div><div></div><div></div><div></div><div></div>
+<section class="trust"><div class="container marquee">
+  <div class="row">
+    <img src="/assets/brands/binance.svg" alt="Binance logo"><img src="/assets/brands/kucoin.svg" alt="KuCoin logo"><img src="/assets/brands/goli.svg" alt="Goli logo">
+    <img src="/assets/brands/binance.svg" alt=""><img src="/assets/brands/kucoin.svg" alt=""><img src="/assets/brands/goli.svg" alt="">
+  </div>
+  <div class="row" aria-hidden="true">
+    <img src="/assets/brands/binance.svg" alt=""><img src="/assets/brands/kucoin.svg" alt=""><img src="/assets/brands/goli.svg" alt="">
+    <img src="/assets/brands/binance.svg" alt=""><img src="/assets/brands/kucoin.svg" alt=""><img src="/assets/brands/goli.svg" alt="">
   </div>
 </div></section>
 
 <section id="services" class="section"><div class="container">
-  <h2>Services & Pricing</h2><div id="svcGrid" class="grid-3"></div>
-  <p class="list" style="margin-top:6px;color:#475569">Prices in USD. Mauritius billing in MUR on request. Custom scopes welcome.</p>
+  <h2>Services & Pricing</h2>
+  <div class="grid-3">
+    <div class="card"><span class="kicker">whatsapp-commerce</span><h3>WhatsApp Commerce Launch</h3><div class="price">From $990</div>
+      <ul class="list"><li>WABA/Embedded signup</li><li>Catalog + order flow</li><li>Payment handoff + follow-ups</li><li>Owner playbook</li></ul>
+      <div style="margin-top:10px"><a class="btn" href="/solutions/whatsapp-commerce.html">See details</a></div></div>
+    <div class="card"><span class="kicker">educonnect</span><h3>EduConnect School Ops</h3><div class="price">From $1,990</div>
+      <ul class="list"><li>Attendance ACKs</li><li>Homework broadcast</li><li>Fee reminders + link</li><li>EN/FR/Creole templates</li></ul>
+      <div style="margin-top:10px"><a class="btn" href="/solutions/educonnect.html">See details</a></div></div>
+    <div class="card"><span class="kicker">jarvis-ops</span><h3>JARVIS Ops Automation</h3><div class="price">From $1,250</div>
+      <ul class="list"><li>Intel + Monitor digests</li><li>Health checks + self-heal</li><li>Supabase/Vercel wiring</li><li>Docs + rollback</li></ul>
+      <div style="margin-top:10px"><a class="btn" href="/solutions/jarvis-ops.html">See details</a></div></div>
+  </div>
 </div></section>
 
 <section class="section"><div class="container">
+  <div class="kicker">Impact in numbers</div>
+  <div class="grid-3">
+    <div class="card"><div class="counter" data-count="14">0</div><div class="kicker">days to first value (typical)</div></div>
+    <div class="card"><div class="counter" data-count="78">0</div><div class="kicker">ACK rate in pilot (sample)</div></div>
+    <div class="card"><div class="counter" data-count="5">0</div><div class="kicker">days to WhatsApp orders (sample)</div></div>
+  </div>
+</div></section>
+
+<section id="industries" class="section"><div class="container">
   <h2>Industries</h2>
+  <div class="tabs"><button class="tab active" data-show="edu">Education</button><button class="tab" data-show="ret">Retail/D2C</button><button class="tab" data-show="sme">SME (Mauritius)</button></div>
+  <div id="edu" class="grid-2 pane"><img src="https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Education" style="width:100%;border-radius:12px">
+    <div><h3>Education (K-12)</h3><ul class="list"><li>One-tap attendance ACKs</li><li>Homework with receipts</li><li>Fee flows + analytics</li></ul><a class="btn" href="/solutions/educonnect.html">See EduConnect</a></div></div>
+  <div id="ret" class="grid-2 pane" style="display:none"><img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Retail" style="width:100%;border-radius:12px">
+    <div><h3>Retail / D2C</h3><ul class="list"><li>WhatsApp storefront + CRM</li><li>Social catalog sync</li><li>Abandoned chat follow-ups</li></ul><a class="btn" href="/solutions/whatsapp-commerce.html">See Commerce</a></div></div>
+  <div id="sme" class="grid-2 pane" style="display:none"><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="SME" style="width:100%;border-radius:12px">
+    <div><h3>SME Ops (Mauritius)</h3><ul class="list"><li>Lean automations</li><li>Visible progress</li><li>Simple to operate</li></ul><a class="btn" href="/industries/sme.html">Learn more</a></div></div>
+</div></section>
+
+<section id="case-studies" class="section"><div class="container">
+  <h2>Case Studies (samples)</h2>
+  <div class="grid-3" style="scroll-snap-type:x mandatory;overflow:auto;padding-bottom:8px">
+    <a class="card" style="scroll-snap-align:start;min-width:320px" href="/case-studies/educonnect-pilot.html"><h3>School ACK Pilot</h3><p class="list">ACK rate ↑ 78% in 14 days.</p></a>
+    <a class="card" style="scroll-snap-align:start;min-width:320px" href="/case-studies/okasina-catalog.html"><h3>OKASINA Catalog</h3><p class="list">WhatsApp orders live in 5 days.</p></a>
+    <a class="card" style="scroll-snap-align:start;min-width:320px" href="/case-studies/jarvis-digests.html"><h3>JARVIS Digests</h3><p class="list">Weekly intel, fewer false alarms.</p></a>
+  </div>
+</div></section>
+
+<section id="insights" class="section"><div class="container">
+  <h2>Insights</h2>
   <div class="grid-3">
-    <a class="card" href="/industries/education.html"><h3>Education (K-12)</h3><p class="list">Attendance ACKs, homework, fee flows, analytics.</p></a>
-    <a class="card" href="/industries/retail-d2c.html"><h3>Retail / D2C</h3><p class="list">WhatsApp storefront, social catalog sync, notifications.</p></a>
-    <a class="card" href="/industries/sme.html"><h3>SME Ops (MU)</h3><p class="list">Lean automations for SMEs in Mauritius.</p></a>
+    <div class="card"><h3>Designing a WhatsApp ACK that gets replies</h3><p>3 patterns that boost response rate.</p></div>
+    <div class="card"><h3>From feeds to flows</h3><p>Turning social catalog views into orders.</p></div>
+    <div class="card"><h3>Intel, not noise</h3><p>Digest templates that create action.</p></div>
   </div>
 </div></section>
 
 <section class="section"><div class="container">
-  <h2>Recent Case Studies</h2>
+  <h2>Partners & Perks</h2>
   <div class="grid-3">
-    <a class="card" href="/case-studies/educonnect-pilot.html"><h3>School ACK Pilot</h3><p class="list">Parent ACKs ↑ 78% in 14 days (sample).</p></a>
-    <a class="card" href="/case-studies/okasina-catalog.html"><h3>OKASINA Catalog</h3><p class="list">WhatsApp orders live in 5 days (sample).</p></a>
-    <a class="card" href="/case-studies/jarvis-digests.html"><h3>JARVIS Digests</h3><p class="list">Weekly “what matters” intel (sample).</p></a>
+    <div class="card"><div class="kicker">Exchange</div><h3>KuCoin</h3><p>Fee perks via referral code <strong>r82Y3XZ</strong>.</p>
+      <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://www.kucoin.com/r/af/r82Y3XZ" target="_blank" rel="nofollow sponsored noopener">Open KuCoin</a><a class="btn ghost" href="/affiliates/kucoin.html">Why this link</a></div></div>
+    <div class="card"><div class="kicker">Exchange</div><h3>Binance</h3><p>CPA referral: <strong>CPA_00G3ONT9KP</strong> (region varies).</p>
+      <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP" target="_blank" rel="nofollow sponsored noopener">Open Binance</a><a class="btn ghost" href="/affiliates/binance.html">Why this link</a></div></div>
+    <div class="card"><div class="kicker">Wellness</div><h3>Goli</h3><p>Use code <strong id="gcode">affili8583</strong> at checkout.</p>
+      <div class="flex" style="gap:10px;flex-wrap:wrap"><a class="btn" href="https://go.goli.com/affili8583" target="_blank" rel="nofollow sponsored noopener">Shop Goli</a><button class="btn ghost" onclick="navigator.clipboard.writeText('affili8583');toast('Code copied')">Copy code</button></div></div>
   </div>
-</div></section>
-
-<section class="section"><div class="container">
-  <h2>How engagements work</h2>
-  <div class="steps">
-    <div class="step"><div><strong>1. Diagnose</strong><br>30–45min call → success criteria + constraints.</div></div>
-    <div class="step"><div><strong>2. Prototype</strong><br>Small slice in 3–5 days, visible progress.</div></div>
-    <div class="step"><div><strong>3. Ship</strong><br>Docs, handover, guardrails; stay simple to run.</div></div>
-  </div>
-</div></section>
-
-<section class="section testimonials"><div class="container grid-2">
-  <div class="quote">“Clear plan, quick execution, and no fluff. We went from idea to live flow in a week.” — Client (sample)</div>
-  <div class="quote">“The WhatsApp attendance ACK solved a real problem for parents and admin.” — School (sample)</div>
+  <p class="kicker" style="margin-top:8px">Official domains only. AOGRL may earn a commission at no extra cost to you.</p>
 </div></section>
 
 <section id="contact" class="section"><div class="container grid-2">
-  <div><h2>Contact</h2><ul class="list">
-    <li>📧 <a id="emailLink" href="#"></a></li><li>💬 <a id="waLink" href="#" target="_blank">WhatsApp</a></li><li>📞 <span id="phones"></span></li></ul></div>
+  <div><h2>Contact</h2><ul class="list"><li>📧 <a href="mailto:deals@aogrl.com">deals@aogrl.com</a></li><li>💬 <a href="https://wa.me/23057887132" target="_blank">WhatsApp</a></li><li>📞 +230 5788 7132 · +230 5494 8236</li></ul></div>
   <form class="card" onsubmit="event.preventDefault(); alert('Thanks — I’ll respond shortly.');">
-    <label>What do you want to build?<br><input type="text" required placeholder="e.g., WhatsApp storefront + order flow"></label><br>
-    <label>Your email<br><input type="email" required placeholder="you@domain.com"></label><br>
+    <label>What do you want to build?<br><input type="text" required placeholder="e.g., WhatsApp storefront + order flow" style="width:100%"></label><br>
+    <label>Your email<br><input type="email" required placeholder="you@domain.com" style="width:100%"></label><br>
     <label>Optional context<br><textarea placeholder="Links, current stack, blockers" style="width:100%;min-height:120px"></textarea></label><br>
     <button class="btn">Send</button></form>
 </div></section>
 
-<footer class="site-footer"><div class="container between center">
-  <div>© <span id="y"></span> AOGRL.</div><div class="links"><a href="/tools.html">Tools</a><a href="#">Privacy</a><a href="#">Terms</a></div>
-</div></footer>
+<footer class="footer"><div class="container between center"><div>© <span id="y"></span> AOGRL.</div><div class="links"><a href="/tools.html">Tools</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></div></div></footer>
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"AOGRL","url":"https://aogrl.com",
-"email":"deals@aogrl.com","telephone":["+230 5788 7132","+230 5494 8236"],"sameAs":[]}
+<script>
+const y=document.getElementById("y"); if(y) y.textContent=(new Date).getFullYear();
+function toast(msg){let t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),1600)}
+
+// Rotator
+(function(){const w=["WhatsApp Systems","Automation","AI Agents","E-commerce"];let i=0;setInterval(()=>{document.getElementById("rot").textContent=w[i%w.length];i++},1400)})();
+
+// Counters on view
+(function(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){let el=e.target,end=+el.dataset.count||0,cur=0,step=Math.ceil(end/40);let h=setInterval(()=>{cur+=step;if(cur>=end){cur=end;clearInterval(h)}el.textContent=cur.toLocaleString()},30);io.unobserve(el)}}),{threshold:.3});document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));})();
+
+// Tabs
+(function(){const tabs=document.querySelectorAll(".tab");tabs.forEach(t=>t.addEventListener("click",()=>{tabs.forEach(b=>b.classList.remove("active"));t.classList.add("active");document.querySelectorAll(".pane").forEach(p=>p.style.display="none");document.getElementById(t.dataset.show).style.display="grid"}));})();
+
+// FAQ
+document.querySelectorAll(".faq .q")?.forEach(q=>q.onclick=()=>{const a=q.nextElementSibling;a.style.display=a.style.display==="block"?"none":"block";});
 </script>
-<script src="/script.js?v=20251025144552" type="module"></script>
 </body></html>
-
-
