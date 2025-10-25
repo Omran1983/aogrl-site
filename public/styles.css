@@ -66,3 +66,16 @@ pre.code{background:#0b1220;border:1px solid #1a2746;border-radius:12px;padding:
 .compare th,.compare td{padding:10px 12px;border:1px solid #1a2746}
 .compare th{background:#0f1530;color:#eaf2ff;text-align:left}
 .compare tr td:first-child{width:32%}
+/* Tools v9 */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 18px}
+.chip{padding:8px 12px;border-radius:999px;border:1px solid #33466e;color:#cfe2ff;cursor:pointer}
+.chip.active{background:#7c3aed;color:#060a1a;border-color:#7c3aed}
+.search{flex:1;min-width:220px}
+.search input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #33466e;background:#0b1229;color:#eaf2ff}
+.badge-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.badge-list .badge{background:rgba(124,58,237,.18);border-color:#3b4f74}
+.compare{margin-top:24px}
+.compare table{width:100%;border-collapse:separate;border-spacing:0 8px}
+.compare th,.compare td{padding:10px 12px;border:1px solid #1a2746}
+.compare th{background:#0f1530;color:#eaf2ff;text-align:left}
+.compare tr td:first-child{width:32%}
