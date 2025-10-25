@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS Ops — AOGRL</title><meta name="description" content="Automation that watches your stack and sends actionable digests.">
+<link rel="canonical" href="https://aogrl.com/solutions/jarvis-ops.html"><link rel="stylesheet" href="/styles.css"></head><body>
+<header class="site-header"><div class="container flex between center"><a href="/" class="brand"><div class="logo">AOGRL</div><div class="tag">Operator • Builder</div></a>
+<nav class="nav"><a href="/">Home</a><a href="/#services" class="active">Services</a></nav></div></header>
+<section class="section"><div class="container grid-2">
+<div><h1>JARVIS Ops</h1><p class="lead">Intel + Monitor bots that surface what matters and self-heal common issues.</p>
+<ul class="list bullets"><li>Hourly/weekly digests to WhatsApp/Email.</li><li>Health checks with restart hooks.</li><li>Supabase + Vercel first-class.</li></ul>
+<a class="btn" href="https://wa.me/23057887132" target="_blank">Start a 12-hour plan</a></div>
+<div class="card"><div class="kicker">Snippet — n8n node</div>
+<pre class="code">
+Cron -> HTTP Request (GET https://status.supabase.com/api/v2/summary.json)
+     -> Filter(warnings) -> Format Digest -> WhatsApp Send
+</pre></div></div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"JARVIS Ops Automation","provider":{"@type":"Organization","name":"AOGRL"},"offers":{"@type":"Offer","priceCurrency":"USD","price":"1250"}}</script>
+</body></html>
