@@ -15,9 +15,9 @@
       "price": "$990",
       "points": [
         "WABA setup (or Meta Embedded signup)",
-        "Catalog & order flow (browse \u2192 cart \u2192 order)",
+        "Catalog & order flow (browse → cart → order)",
         "Payment handoff (link, QR, or gateway you use)",
-        "Auto\u2011messages: order status, follow\u2011ups",
+        "Auto‑messages: order status, follow‑ups",
         "Owner training + playbook PDF"
       ]
     },
@@ -38,13 +38,13 @@
       "points": [
         "n8n/ActivePieces flows for routine tasks",
         "Daily intel + health monitor digests",
-        "Self\u2011healing checks & alerts",
+        "Self‑healing checks & alerts",
         "Supabase/Vercel wiring as needed",
         "Runbook & rollback plan"
       ]
     },
     {
-      "name": "E\u2011commerce Fast Launch (OKASINA style)",
+      "name": "E‑commerce Fast Launch (OKASINA style)",
       "price": "$1,600",
       "points": [
         "Fast storefront (Vercel) + product DB",
@@ -69,7 +69,7 @@
       "name": "Social Growth Engine",
       "price": "$890",
       "points": [
-        "FB/IG/TikTok integration & cross\u2011posting",
+        "FB/IG/TikTok integration & cross‑posting",
         "Inbox unification & quick replies",
         "Content calendar + 30 assets (templated)",
         "Autopilot DM flows for promos",
@@ -96,6 +96,36 @@
         "cta": "Shop Goli (Use Code)",
         "url": "https://go.goli.com/affili8583",
         "perk": "Use code: affili8583 for discount"
+      },
+      {
+        "cta": "Write with Jasper",
+        "perk": "Up to 30% recurring",
+        "url": "YOUR_JASPER_AFFILIATE_LINK",
+        "name": "Jasper AI"
+      },
+      {
+        "cta": "Start Writesonic",
+        "perk": "30% recurring",
+        "url": "YOUR_WRITESONIC_AFF_LINK",
+        "name": "Writesonic"
+      },
+      {
+        "cta": "Try Copy.ai",
+        "perk": "45% for 12 months",
+        "url": "YOUR_COPYAI_AFF_LINK",
+        "name": "Copy.ai"
+      },
+      {
+        "cta": "Try Perplexity",
+        "perk": "Referral/lead rewards",
+        "url": "YOUR_PERPLEXITY_LINK",
+        "name": "Perplexity"
+      },
+      {
+        "cta": "Get Monica",
+        "perk": "25% recurring",
+        "url": "YOUR_MONICA_AFF_LINK",
+        "name": "Monica (AI)"
       }
     ]
   }
