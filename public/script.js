@@ -17,7 +17,7 @@ async function init(){
     <div style="margin-top:10px"><a class="btn" href="/solutions/${s.slug}.html">See details</a></div></div>`).join(""); }
   const aff=document.getElementById("affGrid");
   if(aff){ aff.innerHTML=d.affiliates.map(a=>`<div class="card">
-      <h3>${a.name}</h3>
+      <div class="flex center" style="gap:10px"><img src="${a.logo||""}" alt="${a.name} logo" style="height:28px;aspect-ratio:3/1;object-fit:contain"><h3>${a.name}</h3>
       ${a.code ? `<p>Use code: <strong>${a.code}</strong> <button class="btn small ghost" onclick="navigator.clipboard.writeText('${a.code}').then(()=>toast('Code copied: ${a.code}'))">Copy</button></p>` : ""}
       <p style="color:#059669">${a.perk||""}</p>
       <div class="flex" style="gap:10px;flex-wrap:wrap;margin-top:8px">
@@ -28,3 +28,4 @@ async function init(){
     </div>`).join(""); }
 }
 init();
+

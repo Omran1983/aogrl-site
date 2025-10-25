@@ -4,24 +4,95 @@
     "brand": "AOGRL",
     "email": "deals@aogrl.com",
     "whatsapp": "https://wa.me/23057887132",
-    "phones": ["+230 5788 7132", "+230 5494 8236"],
+    "phones": [
+      "+230 5788 7132",
+      "+230 5494 8236"
+    ],
     "site": "https://aogrl.com"
   },
   "services": [
-    { "slug":"whatsapp-commerce", "name":"WhatsApp Commerce Launch", "price":"$990",
-      "points":["WABA setup or Embedded signup","Catalog + order flow","Payment handoff","Order updates + follow-ups","Owner playbook PDF"] },
-    { "slug":"educonnect", "name":"EduConnect School Ops", "price":"$1,990",
-      "points":["Attendance ACKs & late/absent","Homework & announcements","Fee reminders + payment link","EN/FR/Creole templates","Analytics + handover"] },
-    { "slug":"jarvis-ops", "name":"JARVIS Ops Automation", "price":"$1,250",
-      "points":["n8n/ActivePieces flows","Daily intel + health monitor","Self-healing checks","Supabase/Vercel wiring","Runbook + rollback"] },
-    { "slug":"okasina", "name":"E-commerce (OKASINA style)", "price":"$1,600",
-      "points":["Vercel storefront + product DB","Search/filters","Order form + notifications","Admin basics","Deploy + SEO + analytics"] },
-    { "slug":"ai-agent", "name":"AI Agent Starter", "price":"$1,400",
-      "points":["Local/cloud LLM hookup","1 useful agent (research/ops)","Tool guardrails","Docs & CLI","Onboarding recorded"] }
+    {
+      "slug": "whatsapp-commerce",
+      "name": "WhatsApp Commerce Launch",
+      "price": "$990",
+      "points": [
+        "WABA setup or Embedded signup",
+        "Catalog + order flow",
+        "Payment handoff",
+        "Order updates + follow-ups",
+        "Owner playbook PDF"
+      ]
+    },
+    {
+      "slug": "educonnect",
+      "name": "EduConnect School Ops",
+      "price": "$1,990",
+      "points": [
+        "Attendance ACKs & late/absent",
+        "Homework & announcements",
+        "Fee reminders + payment link",
+        "EN/FR/Creole templates",
+        "Analytics + handover"
+      ]
+    },
+    {
+      "slug": "jarvis-ops",
+      "name": "JARVIS Ops Automation",
+      "price": "$1,250",
+      "points": [
+        "n8n/ActivePieces flows",
+        "Daily intel + health monitor",
+        "Self-healing checks",
+        "Supabase/Vercel wiring",
+        "Runbook + rollback"
+      ]
+    },
+    {
+      "slug": "okasina",
+      "name": "E-commerce (OKASINA style)",
+      "price": "$1,600",
+      "points": [
+        "Vercel storefront + product DB",
+        "Search/filters",
+        "Order form + notifications",
+        "Admin basics",
+        "Deploy + SEO + analytics"
+      ]
+    },
+    {
+      "slug": "ai-agent",
+      "name": "AI Agent Starter",
+      "price": "$1,400",
+      "points": [
+        "Local/cloud LLM hookup",
+        "1 useful agent (research/ops)",
+        "Tool guardrails",
+        "Docs & CLI",
+        "Onboarding recorded"
+      ]
+    }
   ],
   "affiliates": [
-    { "name":"KuCoin","cta":"Trade on KuCoin","url":"https://www.kucoin.com/r/af/r82Y3XZ","perk":"Code: r82Y3XZ — fee perks" },
-    { "name":"Binance","cta":"Join via Binance CPA","url":"https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP","perk":"Code: CPA_00G3ONT9KP" },
-    { "name":"Goli Nutrition","cta":"Shop Goli (Use Code)","url":"https://go.goli.com/affili8583","perk":"Use code: affili8583" }
+    {
+      "name": "KuCoin",
+      "cta": "Trade on KuCoin",
+      "url": "https://www.kucoin.com/r/af/r82Y3XZ",
+      "perk": "Code: r82Y3XZ — fee perks",
+      "logo": "/assets/brands/kucoin.svg"
+    },
+    {
+      "name": "Binance",
+      "cta": "Join via Binance CPA",
+      "url": "https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00G3ONT9KP",
+      "perk": "Code: CPA_00G3ONT9KP",
+      "logo": "/assets/brands/binance.svg"
+    },
+    {
+      "name": "Goli Nutrition",
+      "cta": "Shop Goli (Use Code)",
+      "url": "https://go.goli.com/affili8583",
+      "perk": "Use code: affili8583",
+      "logo": "/assets/brands/goli.svg"
+    }
   ]
 }
